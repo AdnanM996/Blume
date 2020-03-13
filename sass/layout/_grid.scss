@@ -13,14 +13,26 @@
 .limited-edition {
     & .grid {
         grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 5rem auto;
 
         .grid__item {
+
+            & img {
+                object-fit: cover;
+                max-width: 100%;
+                height: auto;
+            }
+
             &--1 {
                 grid-column: 3 / span 2;
+                grid-row: 2 / 3;
+                position: relative;
+                z-index: 2;
             }
 
             &--2 {
                 grid-column: 4 / -1;
+                grid-row: 1 / -1;
             }
         }
 
