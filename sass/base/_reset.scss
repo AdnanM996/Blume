@@ -26,6 +26,12 @@ a {
     text-decoration: none;
 }
 
+img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: bottom;
+}
+
 .wrapper {
     margin: 0 auto;
     width: 120rem;
