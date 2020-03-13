@@ -16,3 +16,17 @@ html, body {
     height: 100%;
     width: 100%;
 }
+
+body {
+    background-color: $color-white;
+    color: $color-black;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 120rem;
+}
