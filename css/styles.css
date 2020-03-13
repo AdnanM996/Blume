@@ -90,6 +90,13 @@ h1 {
 .hero .grid {
   grid-template-columns: 2fr 1fr; }
 
+.limited-edition .grid {
+  grid-template-columns: repeat(12, 1fr); }
+  .limited-edition .grid .grid__item--1 {
+    grid-column: 3 / span 2; }
+  .limited-edition .grid .grid__item--2 {
+    grid-column: 4 / -1; }
+
 .header {
   position: absolute;
   top: 0%;
@@ -154,4 +161,9 @@ h1 {
   margin-top: 7rem; }
   .hero .wrapper {
     height: 100%;
+    width: 100%; }
+
+.limited-edition {
+  padding: 10rem 0rem; }
+  .limited-edition .wrapper {
     width: 100%; }

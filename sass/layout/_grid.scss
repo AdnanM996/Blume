@@ -9,3 +9,21 @@
         grid-template-columns: 2fr 1fr;
     }
 }
+
+.limited-edition {
+    & .grid {
+        grid-template-columns: repeat(12, 1fr);
+
+        .grid__item {
+            &--1 {
+                grid-column: 3 / span 2;
+            }
+
+            &--2 {
+                grid-column: 4 / -1;
+            }
+        }
+
+        
+    }
+}
