@@ -23,3 +23,18 @@
         flex-direction: column;
     }
 }
+
+.responsible-thinking {
+    background-image: url(../../images/bg2.png);
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20rem 0rem;
+
+    & .wrapper {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+}

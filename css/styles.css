@@ -48,6 +48,9 @@ h1 {
   font-weight: 700;
   text-transform: uppercase; }
 
+.text__box {
+  width: 50%; }
+
 .slide {
   position: relative; }
   .slide__item {
@@ -200,3 +203,15 @@ h1 {
     justify-content: space-between;
     align-items: center;
     flex-direction: column; }
+
+.responsible-thinking {
+  background-image: url(../../images/bg2.png);
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20rem 0rem; }
+  .responsible-thinking .wrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; }
