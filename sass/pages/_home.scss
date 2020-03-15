@@ -12,3 +12,14 @@
 .limited-edition {
     padding: 10rem 0rem;
 }
+
+.top-picks {
+    padding: 10rem 0rem;
+
+    & .wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+}

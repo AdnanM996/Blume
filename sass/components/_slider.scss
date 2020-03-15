@@ -22,19 +22,19 @@
 .dot__container {
     display: flex;
     margin: 0 auto;
-    width: 14rem;
+    width: 11.5rem;
 }
 
 .dots {
-    height: 2rem;
-    width: 2rem;
+    height: 1.5rem;
+    width: 1.5rem;
     border-radius: 50%;
     background-color: $color-grey;
     cursor: pointer;
     transition: all .3s ease-in-out;
 
     &:not(:last-child) {
-        margin-right: 2rem;
+        margin-right: 1.5rem;
     }
 
     &--active {
