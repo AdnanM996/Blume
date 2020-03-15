@@ -38,3 +38,31 @@
         align-items: center;
     }
 }
+
+.more-info {
+    padding: 5rem 0rem;
+    background-color: $color-grey;
+
+    & .wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+
+        &::after {
+            content: '';
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            height: 100%;
+            width: 1px;
+            background-color: rgba($color-black, .2);
+
+        }
+    }
+
+    &__item {
+        text-align: center;
+        width: 40%;
+    }
+}

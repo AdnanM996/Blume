@@ -215,3 +215,23 @@ h1 {
     display: flex;
     justify-content: flex-end;
     align-items: center; }
+
+.more-info {
+  padding: 5rem 0rem;
+  background-color: #eee; }
+  .more-info .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; }
+    .more-info .wrapper::after {
+      content: '';
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      height: 100%;
+      width: 1px;
+      background-color: rgba(10, 10, 10, 0.2); }
+  .more-info__item {
+    text-align: center;
+    width: 40%; }
