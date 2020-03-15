@@ -1,0 +1,55 @@
+.footer {
+    background-color: $color-black;
+    padding: 10rem 0rem;
+
+    & .wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    &__item {
+
+        & ul {
+            list-style: none;
+
+            &:hover > * {
+                opacity: 1;
+                transition: all .3s ease-in-out;
+            }
+
+            &:hover > *:not(:hover) {
+                opacity: 0.5;
+            }
+        }
+
+        & li {
+            &:not(:last-child) {
+                margin-bottom: 1.2rem;
+            }
+        }
+
+        & a {
+            color: #a0a0a0;
+            display: block;
+            font-size: 1.2rem;
+            text-transform: capitalize;
+        }
+
+    }
+
+    &--form {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    &--email {
+        padding: .8rem;
+        background-color: transparent;
+        color: $color-white;
+        border: 0;
+        outline-width: 0;
+        border-bottom: 1px solid $color-white;
+    }
+}

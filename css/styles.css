@@ -51,6 +51,12 @@ h1 {
 .text__box {
   width: 50%; }
 
+.footer--heading {
+  color: #fff;
+  font-size: 1.6rem;
+  margin-bottom: 1.6rem;
+  text-transform: uppercase; }
+
 .slide {
   position: relative; }
   .slide__item {
@@ -84,6 +90,39 @@ h1 {
     background-color: #0a0a0a; }
   .dots:hover {
     background-color: #0a0a0a; }
+
+.footer {
+  background-color: #0a0a0a;
+  padding: 10rem 0rem; }
+  .footer .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; }
+  .footer__item ul {
+    list-style: none; }
+    .footer__item ul:hover > * {
+      opacity: 1;
+      transition: all .3s ease-in-out; }
+    .footer__item ul:hover > *:not(:hover) {
+      opacity: 0.5; }
+  .footer__item li:not(:last-child) {
+    margin-bottom: 1.2rem; }
+  .footer__item a {
+    color: #a0a0a0;
+    display: block;
+    font-size: 1.2rem;
+    text-transform: capitalize; }
+  .footer--form {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end; }
+  .footer--email {
+    padding: .8rem;
+    background-color: transparent;
+    color: #fff;
+    border: 0;
+    outline-width: 0;
+    border-bottom: 1px solid #fff; }
 
 .grid {
   display: grid;
