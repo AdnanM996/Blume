@@ -1,5 +1,7 @@
 .slide {
     position: relative;
+    height: 100%;
+    width: 100%;
 
     &__item {
         position: absolute;
@@ -7,12 +9,21 @@
         left: 50%;
         transform: translate(-50%, -50%);
     }
+
+    &--1 {
+        background-image: url(../images/slide1.png);
+        background-attachment: scroll;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }
 
 .slideshow-container--right {
+    position: relative;
     & .slide {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         flex-direction: column;
         padding: 5rem 10rem;
@@ -20,8 +31,12 @@
 }
 
 .dot__container {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
-    margin: 0 auto;
+    margin: 0 auto 5rem auto;
     width: 11.5rem;
 }
 
