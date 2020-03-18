@@ -42,14 +42,25 @@
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
+        border-bottom: 1px solid $color-white;
+        padding: 0rem 5rem;
     }
 
     &--email {
+        display: inline-block;
         padding: .8rem;
         background-color: transparent;
         color: $color-white;
         border: 0;
         outline-width: 0;
-        border-bottom: 1px solid $color-white;
+        width: 100%;
+        background-color: #a0a0a0;
+    }
+
+    &--btn {
+        display: inline-block;
+        background-color: transparent;
+        border: 0;
+        outline-width: 0;
     }
 }

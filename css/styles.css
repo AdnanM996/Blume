@@ -96,6 +96,11 @@ p {
 .more-info--text {
   font-size: 1rem; }
 
+.fa-arrow-right {
+  color: #fff;
+  margin-bottom: 1.5rem;
+  cursor: pointer; }
+
 .cta {
   display: inline-block;
   color: #0a0a0a;
@@ -141,7 +146,8 @@ p {
   font-size: 1.8rem;
   font-weight: 400;
   transition: all .3s ease-in-out;
-  width: 28rem; }
+  width: 28rem;
+  margin-top: 5rem; }
   .btn:hover {
     background-color: #111111; }
 
@@ -226,14 +232,23 @@ p {
   .footer--form {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end; }
+    align-items: flex-end;
+    border-bottom: 1px solid #fff;
+    padding: 0rem 5rem; }
   .footer--email {
+    display: inline-block;
     padding: .8rem;
     background-color: transparent;
     color: #fff;
     border: 0;
     outline-width: 0;
-    border-bottom: 1px solid #fff; }
+    width: 100%;
+    background-color: #a0a0a0; }
+  .footer--btn {
+    display: inline-block;
+    background-color: transparent;
+    border: 0;
+    outline-width: 0; }
 
 .grid {
   display: grid;
@@ -245,13 +260,13 @@ p {
 
 .limited-edition .grid {
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 10rem auto; }
+  grid-template-rows: 35% auto; }
   .limited-edition .grid .grid__item img {
     object-fit: cover;
     max-width: 100%;
     height: auto; }
   .limited-edition .grid .grid__item--1 {
-    grid-column: 3 / span 2;
+    grid-column: 3 / span 4;
     grid-row: 2 / 3;
     position: relative;
     z-index: 2; }
